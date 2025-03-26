@@ -5,13 +5,6 @@ pipeline {
         }
     }
 
-    stages {
-        stage('Clone Repository') {
-            steps {
-                git branch: 'main', url: 'https://github.com/Tring-Thavasumoorthi/simplepythontask.git'
-            }
-        }
-
         stage('Run Python Script') {
             steps {
                 sh 'python app.py'  // Execute the Python script inside Docker
