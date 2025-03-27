@@ -1,6 +1,5 @@
 pipeline {
-    agent { label 'fargateagent' }  https://github.com/Tring-Thavasumoorthi/simplepythontask/blob/main/Jenkinsfile
-
+    agent { label 'fargateagent' } 
     stages {
         stage('Run Python Script') {
             steps {
