@@ -1,10 +1,10 @@
 pipeline {
-    agent { label 'fargateagent' }  
+    agent { label 'fargateagent' }  https://github.com/Tring-Thavasumoorthi/simplepythontask/blob/main/Jenkinsfile
 
     stages {
         stage('Run Python Script') {
             steps {
-                sh 'docker run --rm -v $PWD:/app -w /app python:3.13.2-alpine3.21 python app.py'
+                sh 'python3 app.py'
             }
         }
     }
