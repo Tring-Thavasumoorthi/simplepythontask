@@ -1,9 +1,9 @@
 pipeline {
-    agent { label 'fargateagent' } 
+    agent { label 'fargate' } 
     stages {
-        stage('Run Python Script') {
+        stage('Run Node Script') {
             steps {
-                sh 'python3 app.py'
+                sh 'node app.js'
             }
         }
     }
