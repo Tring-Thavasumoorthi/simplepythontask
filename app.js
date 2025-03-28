@@ -1,4 +1,14 @@
-const a=10
-const b=20
-console.log(a+b)
-console.log("Hello Nodejs welcome from our jenkins")
+const express = require('express');
+const app = express();
+
+const PORT = 3000;
+
+app.get('/', (req, res) => {
+    res.send('Hello, World! ');
+});
+
+console.log("Hello Jenkins i am from NODE js runner")
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
